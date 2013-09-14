@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @tweet.body %>
+</p>
+
+<p>
+  <strong>Stars:</strong>
+  <%= @tweet.stars %>
+</p>
+<p><%= link_to "Tweet Now!", "https://twitter.com/intent/tweet?text=#{@tweet.body}"%></p>
+<%= link_to 'Edit', edit_tweet_path(@tweet) %> |
+<%= link_to 'Back', tweets_path %>
