@@ -1,5 +1,5 @@
 Tweetholder::Application.routes.draw do
-  #root '/tweets'
+  root 'tweets#index'
   resources :tweets
 
   # The priority is based upon order of creation: first created -> highest priority.
